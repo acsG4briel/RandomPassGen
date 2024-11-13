@@ -1,13 +1,27 @@
-import { FooterContainer, HeaderContainer, HeaderLabel, PaginaContainer } from "./PaginaPrincipal.styled";
+import InputInsercao from "../PaginaPrincipalComponents/InputInsercao/InputInsercao";
+import { ConteudoWrapper, HeaderContainer, HeaderLabel, HeaderPrincipalLabel, InsercaoWrapper, PaginaContainer } from "./PaginaPrincipal.styled";
 
 const PaginaPrincipal = () => {
     return (
       <PaginaContainer>
           <HeaderContainer >
-            <HeaderLabel>RANDOM PASS GEN</HeaderLabel>
+            <HeaderPrincipalLabel>RANDOM PASS GEN</HeaderPrincipalLabel>
           </HeaderContainer>
   
-          <div class="Body" > 
+          <ConteudoWrapper> 
+
+          <InsercaoWrapper>
+              <HeaderLabel>NOVA SENHA</HeaderLabel>
+  
+              <InputInsercao label={"Valor"} />
+  
+              <InputInsercao label={"Origem"} />
+  
+              <p>Senha aleatória</p>
+              <input type='checkbox'></input>
+  
+              <button>SALVAR</button>
+            </InsercaoWrapper>
   
             <div class="Tabela">
               <table>
@@ -19,25 +33,8 @@ const PaginaPrincipal = () => {
                 </tr>
               </table>
             </div>
-  
-            <div class="Insercao">
-              <h1>NOVA SENHA</h1>
-  
-              <p>Valor</p>
-              <input />
-  
-              <p>Origem</p>
-              <input></input>
-  
-              <p>Senha aleatória</p>
-              <input type='checkbox'></input>
-  
-              <button>SALVAR</button>
-            </div>
 
-          </div>
-
-          <FooterContainer />
+          </ConteudoWrapper>
       </PaginaContainer>
     );
   }
