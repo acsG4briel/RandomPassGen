@@ -1,25 +1,28 @@
+import HeaderPaginaPrincipal from "../PaginaPrincipalComponents/HeaderPaginaPrincipal/HeaderPaginaPrincipal";
 import InputInsercao from "../PaginaPrincipalComponents/InputInsercao/InputInsercao";
-import { ConteudoWrapper, HeaderContainer, HeaderLabel, HeaderPrincipalLabel, InsercaoWrapper, PaginaContainer } from "./PaginaPrincipal.styled";
+import { ConteudoWrapper, HeaderLabel, InsercaoWrapper, PaginaContainer } from "./PaginaPrincipal.styled";
 
 const PaginaPrincipal = () => {
     return (
       <PaginaContainer>
-          <HeaderContainer >
-            <HeaderPrincipalLabel>RANDOM PASS GEN</HeaderPrincipalLabel>
-          </HeaderContainer>
-  
+
+          <HeaderPaginaPrincipal />
+
           <ConteudoWrapper> 
 
           <InsercaoWrapper>
               <HeaderLabel>NOVA SENHA</HeaderLabel>
   
-              <InputInsercao label={"Valor"} />
+              <InputInsercao label={"ORIGEM"} type='text' />
   
-              <InputInsercao label={"Origem"} />
-  
-              <p>Senha aleatória</p>
-              <input type='checkbox'></input>
-  
+              <InputInsercao label={"LOGIN"} type='text' />
+
+              <InputInsercao label={"SENHA"} type='text' />
+
+              <InputInsercao label={"GERAR SENHA ALEATÓRIA"} type='checkbox' />
+
+              <InputInsercao label={"SALVAR SENHA CRIPTOGRAFADA"} type='checkbox' />
+
               <button>SALVAR</button>
             </InsercaoWrapper>
   
