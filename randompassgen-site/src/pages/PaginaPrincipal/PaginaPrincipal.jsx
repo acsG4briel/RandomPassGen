@@ -1,24 +1,34 @@
 import BoxInsercao from "../../Components/BoxInsercao/BoxInsercao";
+import ButtonExportar from "../../Components/ButtonExportar/ButtonExportar";
 import HeaderPaginaPrincipal from "../../Components/HeaderPaginaPrincipal/HeaderPaginaPrincipal";
-import { ConteudoWrapper, PaginaContainer } from "./PaginaPrincipal.styled";
+import { ConteudoWrapper, HeaderTabela, HeaderTabelaWrapper, PaginaContainer, TabelaInternaWrapper, TabelaWrapper } from "./PaginaPrincipal.styled";
 
 const PaginaPrincipal = () => {
     return (
       <PaginaContainer>
-          <HeaderPaginaPrincipal />
+          <HeaderPaginaPrincipal label={"RANDOM PASS GEN"} />
           <ConteudoWrapper> 
             <BoxInsercao />
   
-            <div class="Tabela">
-              <table>
-                <tr>
-                  <th>Origem</th>
-                  <th>Senha</th>
-                  <th>Criptografia</th>
-                  <th>Outras ações</th>
-                </tr>
-              </table>
-            </div>
+            <TabelaWrapper>
+
+              <HeaderTabelaWrapper >
+                <HeaderTabela>MINHAS SENHAS</HeaderTabela>
+                <ButtonExportar />
+              </HeaderTabelaWrapper>
+
+              <TabelaInternaWrapper>
+                <table>
+                  <tr>
+                    <th>Origem</th>
+                    <th>Senha</th>
+                    <th>Criptografia</th>
+                    <th>Outras ações</th>
+                  </tr>
+                </table>
+              </TabelaInternaWrapper>
+              
+            </TabelaWrapper>
 
           </ConteudoWrapper>
       </PaginaContainer>

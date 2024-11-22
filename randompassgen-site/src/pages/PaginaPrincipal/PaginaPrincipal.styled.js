@@ -13,3 +13,22 @@ export const ConteudoWrapper = styled.div`
     margin: 50px;
     margin-top: 20px;
 `
+
+export const HeaderTabela = styled.div`
+    margin: 0px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 40px;
+    color: #E8EBE8;
+    font-weight: normal;
+`;
+
+export const TabelaWrapper = styled.div`
+`;
+
+export const HeaderTabelaWrapper = styled.div`
+    display: flex;
+`;
+
+export const TabelaInternaWrapper = styled.div`
+    border: solid 5px #E8EBE8;
+`;

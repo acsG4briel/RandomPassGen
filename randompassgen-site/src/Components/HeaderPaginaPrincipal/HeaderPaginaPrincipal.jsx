@@ -1,9 +1,9 @@
 import { HeaderContainer, HeaderLabel } from "./HeaderPaginaPrincipal.styled";
 
-const HeaderPaginaPrincipal = () => {
+const HeaderPaginaPrincipal = ({label}) => {
     return (
         <HeaderContainer>
-            <HeaderLabel>RANDOM PASS GEN</HeaderLabel>
+            <HeaderLabel>{label}</HeaderLabel>
           </HeaderContainer>
     );
 }
